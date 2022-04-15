@@ -27,3 +27,7 @@ html {
   font-weight: bold;
   font-size: 4rem;
 }
+.shrimp {
+  max-height: 200px;
+  max-width: 200px;
+}
