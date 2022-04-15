@@ -1,0 +1,29 @@
+body,
+html {
+  height: 100%;
+}
+
+.hero-image {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080); */
+  /* Set a specific height */
+  max-height: 60%;
+  max-width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  /* text-align: center; */
+  display: inline-block;
+  position: absolute;
+  white-space: nowrap;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-size: 4rem;
+}
