@@ -9,7 +9,11 @@ section {
 .hero-image {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080); */
   /* Set a specific height */
-  max-height: 60%;
+
+  background-image: url("../images/cookingImage.jpg");
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
   max-width: 100%;
 
   /* Position and center the image to scale nicely on all screens */
@@ -33,4 +37,18 @@ section {
 .shrimp {
   max-height: 200px;
   max-width: 200px;
+}
+
+.group-dinner-image {
+  background-image: url("../images/groupDinner.jpg");
+  height: 100vh;
+  width: 100vw;
+  max-height: 100%;
+  max-width: 100%;
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
