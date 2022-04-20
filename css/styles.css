@@ -6,25 +6,25 @@
 
 body {
   font-family: "lato", sans-serif;
+  font-size: 16px;
 }
-body,
-html {
-  height: 100%;
-}
+
 section {
+  position: relative;
   margin-bottom: 150px;
+  /* background-color: aquamarine; */
+}
+section:first-child div + .group-dinner-image {
+  position: relative;
+  background-size: cover;
+  background-position: top;
 }
 
 .hero-image {
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080); */
   /* Set a specific height */
 
-  background-image: linear-gradient(
-      to right bottom,
-      hsla(355, 50%, 52%, 0.801),
-      #f0e68c34
-    ),
-    url(../images/cookingImage.jpg);
+  background-image: url("../images/cookingImage.jpg");
   height: 100vh;
   width: 100vw;
   max-height: 100%;
@@ -53,27 +53,37 @@ section {
   max-height: 200px;
   max-width: 200px;
 }
-
+/* 
+.group-dinner {
+  max-height: auto;
+  max-width: auto;
+} */
 .group-dinner-image {
-  background-image: url("../images/groupDinner.jpg");
-  min-height: 100%;
-  height: 95vh;
-  width: 100vw;
-  max-height: 100%;
-  /* max-width: 100%;  */
+  background-image: linear-gradient(
+      to left top,
+      rgba(116, 120, 115, 0.09),
+      #b4752846
+    ),
+    url("../images/groupDinner2_3_2000x1800.jpg");
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  object-fit: cover;
   position: relative;
+  /* transform: scale(1, 0.95);
+  -ms-transform: scale(1, 0.95);
+  -webkit-transform: scale(1, 0.95); */
+
+  height: 100vh;
 }
 
-.group-dinner-content {
-  display: inline-block;
+.group-dinner-btn {
+  display: block;
   position: absolute;
   white-space: wrap;
-  top: 85%;
+  top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -83,8 +93,38 @@ section {
   z-index: 100;
   color: white;
 }
+.group-dinner-text {
+  display: block;
+  position: absolute;
+  white-space: wrap;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(226, 219, 219);
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 100;
+  color: white;
+  text-shadow: 2px 1px grey;
+  letter-spacing: 2px;
+}
 
 .btn {
   min-width: fit-content;
   white-space: nowrap;
+  background-color: #b47528de !important;
+}
+.group-dinner-btn:hover {
+  color: #f99214;
+  background-color: #f99214;
+}
+
+.wedding-cake,
+.building,
+.toasting-glasses {
+  height: 5rem;
+}
+
+.catering-title {
 }
