@@ -65,6 +65,9 @@ section:first-child div + .group-dinner-image {
   max-height: 200px;
   max-width: 200px;
 }
+img .shrimp {
+  height: 10rem;
+}
 /* 
 .group-dinner {
   max-height: auto;
@@ -90,6 +93,27 @@ section:first-child div + .group-dinner-image {
 
   height: 100vh;
 }
+.catering-image {
+  background-image: linear-gradient(
+      to left top,
+      rgba(116, 120, 115, 0.09),
+      #b4752846
+    ),
+    url("../images/catering.jpg");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  /* transform: scale(1, 0.95);
+-ms-transform: scale(1, 0.95);
+-webkit-transform: scale(1, 0.95); */
+
+  height: 100vh;
+}
+
 .menu-hero-image {
   background-image: linear-gradient(
       to left top,

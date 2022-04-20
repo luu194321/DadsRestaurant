@@ -12,22 +12,12 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
-    <link rel="stylesheet" href="css/styles.css" />
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -117,58 +107,57 @@
     </section>
 
     <section class="mt-5 pt-5">
-      <h2 class="text-center">Popular items</h2>
-
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col">
-            <div class="flex-shrink-0 align-self-center">
-              <img
-                src="/images/asianWings.jpg"
-                class="col rounded mx-auto d-block shrimp"
-                alt="..."
-              />
-              <p class="d-none d-sm-block text-center text-wrap">
-                Nuoc mam (fish sauce) wings deep fried to perfection.
-              </p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="flex-shrink-0 align-self-center">
-              <img
-                src="/images/friedShrimp.jpg"
-                class="col rounded img-fluid mx-auto d-block shrimp"
-                alt="..."
-              />
-              <p class="d-none d-sm-block text-center text-wrap">
-                Deep fried jumbo shrimp (shell on) and sauteed in our signature
-                savory house sauce.
-              </p>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="flex-shrink-0 align-self-center">
-              <img
-                src="/images/friedRice2.jpg"
-                class="col rounded mx-auto d-block shrimp"
-                alt="..."
-              />
-              <p class="d-none d-sm-block text-center text-wrap">
-                Nuoc mam (fish sauce) wings deep fried to perfection.
-              </p>
-            </div>
-          </div>
+          <h2 class="text-center mb-5 fw-bold fs-1">Popular Items</h2>
         </div>
-        <div class="row justify-content-center">
-          <a class="col-2 btn btn-success">See complete menu</a>
+        <div class="row">
+          <figure class="figure col">
+            <img
+              src="/images/asianWings.jpg"
+              class="figure-img img-fluid rounded"
+              alt="asian chicken wings"
+            />
+            <figcaption class="figure-caption d-none d-md-block">
+              Nuoc mam (fish sauce) wings deep fried to perfection.
+            </figcaption>
+          </figure>
+
+          <figure class="figure col">
+            <img
+              src="/images/friedShrimp.jpg"
+              class="figure-img img-fluid rounded"
+              alt="fried shrimp"
+            />
+            <figcaption class="figure-caption d-none d-md-block">
+              Deep fried jumbo shrimp (shell on) and sauteed in our signature
+              savory house sauce.
+            </figcaption>
+          </figure>
+
+          <figure class="figure col">
+            <img
+              src="/images/friedRice2.jpg"
+              class="figure-img img-fluid rounded"
+              alt="fried rice"
+            />
+            <figcaption class="figure-caption d-none d-md-block">
+              Short grain jasmine rice wok-fried with signature savory house
+              sauce.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="row justify-content-center mt-2 pt-5">
+          <a class="col-2 btn btn-success" role="button" href="/pages/Menu.html"
+            >See Complete Menu</a
+          >
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="container">
+    <section class="mt-5 pt-5">
+      <div class="container-fluid catering-image">
         <div class="row">
           <h2 class="catering-title text-uppercase text-center">
             Perfect for every occasion
@@ -193,11 +182,6 @@
                 <li class="list-group-item">Family & Friends Gathering</li>
               </ul>
             </div>
-
-            <div class="card-footer">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
           </div>
 
           <div class="card col text-center">
@@ -213,11 +197,6 @@
                 <li class="list-group-item">Office Gatherings/Meetings</li>
                 <li class="list-group-item">Employee appreciation</li>
               </ul>
-            </div>
-
-            <div class="card-footer">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
 
@@ -237,11 +216,6 @@
               <ul class="list-group center list-group-flush">
                 <li class="list-group-item">Receptions ONLY</li>
               </ul>
-            </div>
-
-            <div class="card-footer">
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
             </div>
           </div>
         </div>
