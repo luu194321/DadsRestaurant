@@ -95,14 +95,15 @@ img .shrimp {
 }
 .catering-image {
   background-image: linear-gradient(
-      to left top,
-      rgba(116, 120, 115, 0.09),
-      #b4752846
+      to bottom,
+
+      rgba(0, 0, 0, 0.512),
+      rgba(0, 0, 0, 0.764)
     ),
-    url("../images/catering.jpg");
+    url("../images/catering2.jpg");
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -114,6 +115,9 @@ img .shrimp {
   height: 100vh;
 }
 
+.card {
+  /* opacity: 0.6; */
+}
 .menu-hero-image {
   background-image: linear-gradient(
       to left top,
