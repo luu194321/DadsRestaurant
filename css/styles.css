@@ -11,13 +11,24 @@ body {
 
 section {
   position: relative;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
   /* background-color: aquamarine; */
 }
 section:first-child div + .group-dinner-image {
   position: relative;
   background-size: cover;
   background-position: top;
+}
+
+.bg-default {
+  background-color: #636363;
+  background-image: url("../images/concrete-wall.png");
+  height: 25rem;
+}
+
+.color-default {
+  color: #fddeb9;
+  background-image: url("../images/concrete-wall.png");
 }
 
 .hero-image {
@@ -35,19 +46,20 @@ section:first-child div + .group-dinner-image {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
 }
 .hero-text {
   /* text-align: center; */
   display: inline-block;
   position: absolute;
   white-space: nowrap;
-  top: 65%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-weight: bold;
   font-size: 4rem;
+  text-shadow: 2px 1px grey;
 }
 .shrimp {
   max-height: 200px;
@@ -77,6 +89,54 @@ section:first-child div + .group-dinner-image {
   -webkit-transform: scale(1, 0.95); */
 
   height: 100vh;
+}
+.menu-hero-image {
+  background-image: linear-gradient(
+      to left top,
+      rgba(116, 120, 115, 0.09),
+      #b4752846
+    ),
+    url("../images/menuHeroImg.jpg");
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  position: relative;
+  /* transform: scale(1, 0.95);
+  -ms-transform: scale(1, 0.95);
+  -webkit-transform: scale(1, 0.95); */
+
+  height: 100vh;
+}
+.menu-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.menu-header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.menu-header-text {
+  position: absolute;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 1px grey;
+  font-size: 1.3rem;
+}
+.menu-title {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 6rem;
 }
 
 .group-dinner-btn {
@@ -113,9 +173,13 @@ section:first-child div + .group-dinner-image {
 .btn {
   min-width: fit-content;
   white-space: nowrap;
+  background-color: #fbbe72;
+}
+.group-dinner-btn {
   background-color: #b47528de !important;
 }
-.group-dinner-btn:hover {
+.group-dinner-btn:hover,
+btn:hover {
   color: #f99214;
   background-color: #f99214;
 }
