@@ -93,33 +93,7 @@ img .shrimp {
 
   height: 100vh;
 }
-.catering-image {
-  background-image: linear-gradient(
-      to bottom,
 
-      rgba(0, 0, 0, 0.282),
-      rgba(0, 0, 0, 0.282),
-      rgba(0, 0, 0, 0.372),
-      rgba(0, 0, 0, 0.764)
-    ),
-    url("../images/catering2.jpg");
-
-  /* Position and center the image to scale nicely on all screens */
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  object-fit: cover;
-  position: relative;
-  /* transform: scale(1, 0.95);
--ms-transform: scale(1, 0.95);
--webkit-transform: scale(1, 0.95); */
-
-  height: 100vh;
-}
-
-section + .catering {
-  text-shadow: 2px 1px rgba(128, 128, 128, 0.404);
-}
 .menu-hero-image {
   background-image: linear-gradient(
       to left top,
@@ -218,7 +192,4 @@ btn:hover {
 .building,
 .toasting-glasses {
   height: 5rem;
-}
-
-.catering-title {
 }
