@@ -23,7 +23,7 @@ section:first-child div + .group-dinner-image {
 .bg-default {
   background-color: #636363;
   background-image: url("../images/concrete-wall.png");
-  height: 25rem;
+  height: 15rem;
 }
 
 .color-default {
@@ -103,7 +103,7 @@ img .shrimp {
     url("../images/menuHeroImg.jpg");
 
   /* Position and center the image to scale nicely on all screens */
-  background-position: top;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -112,7 +112,7 @@ img .shrimp {
   -ms-transform: scale(1, 0.95);
   -webkit-transform: scale(1, 0.95); */
 
-  height: 100vh;
+  height: 60vh;
 }
 .menu-header {
   position: absolute;

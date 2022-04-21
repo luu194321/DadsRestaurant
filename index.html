@@ -18,6 +18,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
     />
+    
 
     <title>NuCamp: A Better Way To Camp</title>
   </head>
@@ -25,7 +26,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand ms-4" href="#catering">Kenny Luu Catering</a>
+        <a class="navbar-brand ms-4" href="#">Kenny Luu Catering</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -53,7 +54,7 @@
               <a class="nav-link" href="./pages/Menu.html">Menu</a>
             </li>
             <li class="nav-item pe-3">
-              <a class="nav-link" href="#">Catering</a>
+              <a class="nav-link" href="#catering">Catering</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Pricing</a>
@@ -106,7 +107,7 @@
       /> -->
     </section>
 
-    <section class="mt-5 pt-5">
+    <section class="mt-5 py-5">
       <div class="container-fluid">
         <div class="row">
           <h2 class="text-center mb-5 fw-bold fs-1">Popular Items</h2>
@@ -156,10 +157,12 @@
       </div>
     </section>
 
-    <section class="mt-5 pt-5">
+    <section class="my-5 py-5" id="catering">
       <div class="container-fluid catering-image">
         <div class="row">
-          <h2 class="catering-title text-uppercase text-center">
+          <h2
+            class="catering-title text-uppercase text-center py-5 fw-bold fs-1"
+          >
             Perfect for every occasion
           </h2>
         </div>
@@ -218,11 +221,34 @@
           </div>
         </div>
       </div>
-      <div>
+      <p class="text-center pt-3">
         Please note that catering is not limited to the events above. For more
         information, please contact us.
-      </div>
+      </p>
     </section>
+
+    <footer class="site-footer bg-default">
+      <div class="container pt-5 text-white">
+        <div class="row">
+          <div class="col-4 col-sm-2 offset-1">
+            <h3 class="row fw-bold">Hours</h3>
+
+            <h5 class="row fst-italic">Sunday &#8212 Saturday</h5>
+            <h6 class="row">11am &#8212 10pm</h6>
+          </div>
+          <div class="col-6 col-sm-5 text-center">
+            <h3 class="fw-bold">Location</h3>
+            <p>Arlington, Texas</p>
+          </div>
+          <div class="col-sm-4 text-center">
+            <h3 class="fw-bold">Contacts</h3>
+            <p>Kenny's Cell: 817-888-8888</p>
+            <p>Alex's Cell: 817-888-8888</p>
+            <p>Email: KennyLuuCatering@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
