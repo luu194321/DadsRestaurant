@@ -5,8 +5,22 @@
 }
 
 body {
-  font-family: "lato", sans-serif;
+  font-family: "Libre bodoni", serif;
   font-size: 16px;
+}
+h1 {
+  font-family: "cormorant", serif !important;
+}
+p {
+  font-family: "libre bodoni" serif !important;
+  font-style: italic;
+  /* letter-spacing: 1rem; */
+}
+h1,
+h2,
+h3 {
+  font-family: "playfair display" serif;
+  font-style: italic;
 }
 
 section {
@@ -21,9 +35,8 @@ section:first-child div + .group-dinner-image {
 }
 
 .bg-default {
-  background-color: #636363;
-  background-image: url("../images/concrete-wall.png");
-  height: 15rem;
+  background-color: white;
+  background-image: url("../images/little-pluses.png");
 }
 
 .color-default {
@@ -57,9 +70,9 @@ section:first-child div + .group-dinner-image {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-weight: bold;
-  font-size: 4rem;
-  text-shadow: 2px 1px grey;
+  /* font-weight: bold; */
+  font-size: 6rem;
+  text-shadow: 2px 3px grey;
 }
 .shrimp {
   max-height: 200px;
