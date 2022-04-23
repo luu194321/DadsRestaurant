@@ -34,6 +34,7 @@ section:first-child div + .group-dinner-image {
   background-position: top;
 }
 
+body,
 .bg-default {
   background-color: white;
   background-image: url("../images/little-pluses.png");
@@ -45,16 +46,11 @@ section:first-child div + .group-dinner-image {
 }
 
 .hero-image {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), #00000080); */
-  /* Set a specific height */
-
   background-image: url("../images/cookingImage.jpg");
   height: 100vh;
   width: 100vw;
   max-height: 100%;
   max-width: 100%;
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,30 +58,22 @@ section:first-child div + .group-dinner-image {
   /* clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); */
 }
 .hero-text {
-  /* text-align: center; */
   display: inline-block;
   position: absolute;
-  white-space: nowrap;
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* font-weight: bold; */
+
   font-size: 6rem;
   text-shadow: 2px 3px grey;
 }
-.shrimp {
-  max-height: 200px;
-  max-width: 200px;
+
+.figure-img {
+  box-shadow: 0 10px 12px 0 rgba(0, 0, 0, 0.24), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 1rem;
 }
-img .shrimp {
-  height: 10rem;
-}
-/* 
-.group-dinner {
-  max-height: auto;
-  max-width: auto;
-} */
+
 .group-dinner-image {
   background-image: linear-gradient(
       to left top,
@@ -93,18 +81,13 @@ img .shrimp {
       #b4752846
     ),
     url("../images/groupDinner2_3_2000x1800.jpg");
-
-  /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
   position: relative;
-  /* transform: scale(1, 0.95);
-  -ms-transform: scale(1, 0.95);
-  -webkit-transform: scale(1, 0.95); */
-
   height: 100vh;
+  z-index: auto;
 }
 
 .menu-hero-image {
@@ -160,7 +143,7 @@ img .shrimp {
   display: block;
   position: absolute;
   white-space: wrap;
-  top: 90%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -171,38 +154,49 @@ img .shrimp {
   color: white;
 }
 .group-dinner-text {
-  display: block;
+  /* display: block; */
   position: absolute;
   white-space: wrap;
-  top: 10%;
+
+  top: 92vh;
   left: 50%;
   transform: translate(-50%, -50%);
   color: rgb(226, 219, 219);
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   text-align: center;
   z-index: 100;
   color: white;
-  text-shadow: 2px 1px grey;
-  letter-spacing: 2px;
+  text-shadow: grey 2px 3px;
+  letter-spacing: 1px;
 }
 
 .btn {
   min-width: fit-content;
   white-space: nowrap;
-  background-color: #fbbe72;
+  /* background-color: #fbbe72; */
 }
-.group-dinner-btn {
-  background-color: #b47528de !important;
-}
-.group-dinner-btn:hover,
-btn:hover {
-  color: #f99214;
-  background-color: #f99214;
+.btn:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 
 .wedding-cake,
 .building,
 .toasting-glasses {
   height: 5rem;
+}
+@media (max-width: 680px) {
+  .hero-image {
+    width: auto;
+    background-position: top left;
+  }
+}
+@media (max-height: 500px) {
+  .hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+  }
 }
